@@ -1,13 +1,15 @@
 # Evaluation
-Recall@1 0.86
-Recall@10 0.57
-Recall@100 0.58
-MicroF1 0.47
+Recall@1 0.86 \
+Recall@10 0.57 \    
+Recall@100 0.58 \
+MicroF1 0.47 \
 
 # Methodology
 Retriever is multi-qa-MiniLM-L6-cos-v1. NLI model is DebertaV3. 
-Emb dim is 384. Retriever is finetuned via contrastive learning (random negative samples). NLI Model is fine tuned on training dataset. 
+Emb dim is 384. \
+Retriever is finetuned via contrastive learning (random negative samples). NLI Model is fine tuned on training dataset. 
 
 # Corpus indexing
-Used faiss to index document level encodings. Reranking didnt seem necessary.
-To find relevant sentences, first top k docs were retrived. Then per doc, every sentence was ranked. We take the best k sentences from the entire retrieved doc set. k = 5 in our case
+Used faiss to index document level encodings. Reranking didnt seem necessary. \
+To find relevant sentences, first top k docs were retrived. Then per doc, every sentence was ranked.\
+ We take the best k sentences from the entire retrieved doc set. k = 5 in our case
