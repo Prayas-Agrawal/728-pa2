@@ -14,7 +14,7 @@ MicroF1 0.46 \
 
 
 # Models
-Retriever is multi-qa-MiniLM-L6-cos-v1. NLI model is DebertaV3. 
+Retriever is multi-qa-MiniLM-L6-cos-v1. NLI model is DebertaV3/Bert-bi-encoder. 
 Retriever Emb dim is 384. \
 Retriever is finetuned via contrastive learning (random negative samples). NLI Model is fine tuned on training dataset. 
 
