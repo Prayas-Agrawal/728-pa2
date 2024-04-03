@@ -23,5 +23,5 @@ Used faiss to index document level encodings. Reranking didnt seem necessary. \
 To find relevant sentences, first top k docs were retrived. Then per doc, every sentence was ranked.\
  We take the best k sentences from the entire retrieved doc set. k = 5 in our case
 
- # NLI
- A linear layer was added on top of Deberta/bert when required, projecting mean pooled embeddings.
+# NLI
+A linear layer was added on top of Deberta/bert when required, projecting mean pooled embeddings.
